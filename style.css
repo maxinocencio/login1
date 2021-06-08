@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --textcolor: #469d89;
+}
+
+html {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background: #469d89;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fafafa;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    filter: drop-shadow(0 10px 16px rgba(0,0,0,.5))
+}
+
+.inputlogin h1 {
+    display: grid;
+    text-align: center;
+    height: 10px;
+    color: var(--textcolor);
+}
+
+.inputlogin {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--textcolor);
+}
+
+.inputlogin label {
+    align-self: start;
+    justify-content: center;
+    display: grid;
+    flex-direction: column;
+    height: 10px;
+}
+
+.inputlogin label input {
+    display: flex;
+    width: 250px;
+    border-radius: 15px;
+    height: 30px;
+    border-color: #469d89;
+    border-style: solid;
+    background: #f1f1f1;
+}
+
+.inputlogin span h4 {
+    font-size: 15px;
+}
+
+.inputlogin span h4 a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+#login {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#login button {
+    color: #fafafa;
+    width: 150px;
+    height: 40px;
+    /*background: #469d89;*/
+    background: linear-gradient(67deg,#78c6a3, #469d89);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login button:hover {
+    width: 160px;
+    background: linear-gradient(67deg,#78c6a3, #469d89);
+    transition: 300ms ease-in-out;
+}
